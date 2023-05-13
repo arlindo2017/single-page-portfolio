@@ -1,9 +1,14 @@
 import React from "react";
-// Here we are importing a CSS file as a dependency
+
+const styles = {
+  headerStyle: {
+    height: "200px",
+  },
+};
 
 function Header() {
   return (
-    <header className="header">
+    <header style={styles.headerStyle} className="header container">
       <h1>Arlindo Pinto</h1>
     </header>
   );
