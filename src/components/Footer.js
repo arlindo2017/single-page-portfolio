@@ -20,7 +20,7 @@ function Footer() {
         <a
           className="link-secondary"
           style={styles.linkStyle}
-          href="https://github.com"
+          href="https://github.com/arlindo2017"
         >
           GitHub
         </a>
@@ -34,7 +34,7 @@ function Footer() {
         <a
           className="link-secondary"
           style={styles.linkStyle}
-          href="https://twitter.com"
+          href="https://twitter.com/Arlindo23636263"
         >
           Twitter
         </a>

@@ -1,15 +1,21 @@
 import React from "react";
 
 const styles = {
-  sectionStyle: {
-    // height: "100%",
+  imgStyle: {
+    maxHeight: "200px",
   },
 };
 
 export default function About() {
   return (
-    <div style={styles.navbarStyle}>
-      <h1>About Page</h1>
+    <div>
+      <img
+        style={styles.imgStyle}
+        src="./assets/img/profile.jpg"
+        alt="My Profile"
+      />
+      <hr />
+      <h4>About Me</h4>
       <p>
         As a beginner web developer, I am excited to begin my journey in the
         development field where I hope to apply some of my previous experience

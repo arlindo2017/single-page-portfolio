@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
   headerStyle: {
-    height: "200px",
+    height: "100px",
   },
 };
 
