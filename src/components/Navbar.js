@@ -6,6 +6,16 @@ const styles = {
     textDecoration: "none",
     marginBottom: "50px",
   },
+  const styles = {
+    linkStyle: {
+      margin: "0 10px",
+      textDecoration: "none",
+      background: "white",
+    },
+    cardStyle: {
+      backGroundColor: "white",
+    },
+  };
 };
 
 function Navbar({ currentPage, handlePageChange }) {
