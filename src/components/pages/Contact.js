@@ -1,91 +1,89 @@
 import React, { useState } from "react";
+import { validateEmail } from "../utils/helpers";
 
-// Here we import a helper function that will check if the email is valid
-import { checkPassword, validateEmail } from "../utils/helpers";
+const styles = {
+  cardBodyStyle: {
+    padding: "10px",
+    background: "#222831",
+    opacity: "0.9",
+    color: "white",
+  },
+  formStyle: {
+    margin: "10px 0",
+  },
+};
 
 function Contact() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    // Based on the input type, we set the state of either email, username, and password
-    if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "userName") {
-      setUserName(inputValue);
+    const { name, value } = e.target;
+    if (name === "name") {
+      setName(value);
+    } else if (name === "email") {
+      setEmail(value);
     } else {
-      setPassword(inputValue);
+      setMessage(value);
     }
   };
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
-
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage("Email or username is invalid");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-    if (!checkPassword(password)) {
-      setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
-      );
+    if (!validateEmail(email) || !name) {
+      setErrorMessage("Email is invalid");
       return;
     }
-    alert(`Hello ${userName}`);
+    alert(`Hello ${name}`);
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setUserName("");
-    setPassword("");
+    setName("");
     setEmail("");
+    setMessage("");
   };
 
   return (
-    <div>
-      <h4>Hello {userName}</h4>
-      <form className="form">
+    <div className="card" style={styles.cardBodyStyle}>
+      <h4 className="card-header">Contact Me {name}</h4>
+      <form className="form card-body">
         <input
-          value={email}
+          style={styles.formStyle}
+          className="form-control"
+          name="name"
+          onChange={handleInputChange}
+          type="name"
+          placeholder="Name"
+          value={name}
+        />
+        <input
+          style={styles.formStyle}
+          className="form-control"
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="Email"
+          value={email}
         />
-        <input
-          value={userName}
-          name="userName"
+        <textarea
+          style={styles.formStyle}
+          className="form-control"
+          name="message"
           onChange={handleInputChange}
-          type="text"
-          placeholder="username"
+          value={message}
+          placeholder="Message"
+          rows="5"
         />
-        <input
-          value={password}
-          name="password"
-          onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
-        />
-        <button type="button" onClick={handleFormSubmit}>
+        <button
+          style={styles.formStyle}
+          className="btn btn-secondary"
+          type="button"
+          onClick={handleFormSubmit}
+        >
           Submit
         </button>
       </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+      {errorMessage && <p className="error-text">{errorMessage}</p>}
     </div>
   );
 }

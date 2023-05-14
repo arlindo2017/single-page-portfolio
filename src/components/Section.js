@@ -25,9 +25,7 @@ export default function Section() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   const styles = {
-    sectionStyle: {
-      height: "100%",
-    },
+    sectionStyle: {},
   };
 
   return (

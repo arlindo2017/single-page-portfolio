@@ -3,22 +3,26 @@ import React from "react";
 const styles = {
   navbarStyle: {
     fontWeight: "bold",
-    textDecoration: "none",
-    marginBottom: "50px",
+    marginBottom: "10px",
+    background: "#222831",
+    opacity: "0.9",
+    borderRadius: "0 0 10px 10px",
+    paddingBottom: "10px",
   },
   linkStyle: {
-    margin: "0 10px",
-    textDecoration: "none",
-  },
-  cardStyle: {
-    backGroundColor: "white",
+    padding: "0px 20px 0 0",
+    marginLeft: "20px",
+    color: "white",
   },
 };
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <ul style={styles.navbarStyle} className="nav nav-tabs container">
-      <li className="nav-item">
+    <nav
+      style={styles.navbarStyle}
+      className="navbar navbar-expand-lg navbar-light"
+    >
+      <div className="nav-item">
         <a
           style={styles.linkStyle}
           href="#about"
@@ -32,8 +36,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           About Me
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="nav-item">
         <a
           style={styles.linkStyle}
           href="#portfolio"
@@ -47,8 +51,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           Portfolio
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="nav-item">
         <a
           style={styles.linkStyle}
           href="#contact"
@@ -62,8 +66,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           Contact
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="nav-item">
         <a
           style={styles.linkStyle}
           href="#resume"
@@ -77,8 +81,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           Resume
         </a>
-      </li>
-    </ul>
+      </div>
+    </nav>
   );
 }
 

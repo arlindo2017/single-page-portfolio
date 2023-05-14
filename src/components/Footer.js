@@ -11,32 +11,25 @@ const styles = {
     margin: "10px",
     padding: "10px",
     textDecoration: "none",
+    fontSize: "24px",
+    color: "#222831",
   },
 };
 
 function Footer() {
   return (
     <footer style={styles.footerStyle} className="footer container">
-      <a
-        className="link-secondary"
-        style={styles.linkStyle}
-        href="https://github.com/arlindo2017"
-      >
-        GitHub
+      <a style={styles.linkStyle} href="https://github.com/ ">
+        <i class="bi-github contact-me-icons"></i>
       </a>
-      <a
-        className="link-secondary"
-        style={styles.linkStyle}
-        href="https://linkedin.com"
-      >
-        LinkedIn
+      <a style={styles.linkStyle} href="https://linkedin.com">
+        <i class="bi bi-linkedin"></i>
       </a>
-      <a
-        className="link-secondary"
-        style={styles.linkStyle}
-        href="https://twitter.com/Arlindo23636263"
-      >
-        Twitter
+      <a style={styles.linkStyle} href="https://twitter.com/Arlindo23636263">
+        <i class="bi-twitter contact-me-icons"></i>
+      </a>
+      <a style={styles.linkStyle} href="mailto:perensen@gmail.com">
+        <i class="bi-envelope-at contact-me-icons"></i>
       </a>
     </footer>
   );

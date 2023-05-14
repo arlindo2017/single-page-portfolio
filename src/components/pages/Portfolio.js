@@ -16,7 +16,7 @@ const styles = {
 
 export default function Portfolio() {
   return (
-    <div className="container">
+    <div>
       <h4>Portfolio</h4>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         {/* cards */}

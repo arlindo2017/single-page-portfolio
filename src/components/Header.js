@@ -2,14 +2,22 @@ import React from "react";
 
 const styles = {
   headerStyle: {
-    height: "100px",
+    color: "white",
+    background: "#222831",
+    opacity: "0.9",
+    padding: "20px",
+  },
+  nameStyle: {
+    margin: "0",
   },
 };
 
 function Header() {
   return (
-    <header style={styles.headerStyle} className="header container">
-      <h1>Arlindo Pinto</h1>
+    <header className=" container">
+      <div style={styles.headerStyle}>
+        <h1 style={styles.nameStyle}>Arlindo Pinto</h1>
+      </div>
     </header>
   );
 }
