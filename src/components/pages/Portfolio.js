@@ -55,7 +55,7 @@ export default function Portfolio() {
                 href="https://github.com/arlindo2017/project-nexus"
                 className="link-secondary"
               >
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Portfolio() {
                 href="https://github.com/FreeWill201/Space-Repo"
                 className="link-secondary"
               >
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function Portfolio() {
                 href="https://github.com/arlindo2017/text-editor"
                 className="link-secondary"
               >
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function Portfolio() {
                 href="https://github.com/arlindo2017/climate-cove"
                 className="link-secondary"
               >
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function Portfolio() {
                 href="https://github.com/arlindo2017/code-quiz"
                 className="link-secondary"
               >
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>
@@ -245,7 +245,7 @@ export default function Portfolio() {
                 href="https://github.com/arlindo2017/galaxy-geek"
                 className="link-secondary"
               >
-                GitHub Repo
+                GitHub
               </a>
             </div>
           </div>

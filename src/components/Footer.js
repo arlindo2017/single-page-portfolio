@@ -8,7 +8,8 @@ const styles = {
     alignItems: "center",
   },
   linkStyle: {
-    margin: "0 10px",
+    margin: "10px",
+    padding: "10px",
     textDecoration: "none",
   },
 };
@@ -16,29 +17,27 @@ const styles = {
 function Footer() {
   return (
     <footer style={styles.footerStyle} className="footer container">
-      <h6>
-        <a
-          className="link-secondary"
-          style={styles.linkStyle}
-          href="https://github.com/arlindo2017"
-        >
-          GitHub
-        </a>
-        <a
-          className="link-secondary"
-          style={styles.linkStyle}
-          href="https://linkedin.com"
-        >
-          LinkedIn
-        </a>
-        <a
-          className="link-secondary"
-          style={styles.linkStyle}
-          href="https://twitter.com/Arlindo23636263"
-        >
-          Twitter
-        </a>
-      </h6>
+      <a
+        className="link-secondary"
+        style={styles.linkStyle}
+        href="https://github.com/arlindo2017"
+      >
+        GitHub
+      </a>
+      <a
+        className="link-secondary"
+        style={styles.linkStyle}
+        href="https://linkedin.com"
+      >
+        LinkedIn
+      </a>
+      <a
+        className="link-secondary"
+        style={styles.linkStyle}
+        href="https://twitter.com/Arlindo23636263"
+      >
+        Twitter
+      </a>
     </footer>
   );
 }
