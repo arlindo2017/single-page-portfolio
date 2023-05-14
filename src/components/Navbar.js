@@ -6,7 +6,7 @@ const styles = {
     marginBottom: "10px",
     background: "#222831",
     opacity: "0.9",
-    borderRadius: "0 0 10px 10px",
+    borderRadius: "0 0 5px 5px",
     paddingBottom: "10px",
   },
   linkStyle: {
