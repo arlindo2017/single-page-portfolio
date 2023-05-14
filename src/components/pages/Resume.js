@@ -6,6 +6,7 @@ const styles = {
     background: "#222831",
     opacity: "0.8",
     color: "white",
+    paddingBottom: "50px",
   },
 };
 

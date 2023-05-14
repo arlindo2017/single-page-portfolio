@@ -7,6 +7,7 @@ const styles = {
     background: "#222831",
     opacity: "0.9",
     color: "white",
+    paddingBottom: "50px",
   },
   formStyle: {
     margin: "10px 0",

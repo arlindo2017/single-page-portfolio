@@ -20,16 +20,16 @@ function Footer() {
   return (
     <footer style={styles.footerStyle} className="footer container">
       <a style={styles.linkStyle} href="https://github.com/ ">
-        <i class="bi-github contact-me-icons"></i>
+        <i className="bi-github contact-me-icons"></i>
       </a>
       <a style={styles.linkStyle} href="https://linkedin.com">
-        <i class="bi bi-linkedin"></i>
+        <i className="bi bi-linkedin"></i>
       </a>
       <a style={styles.linkStyle} href="https://twitter.com/Arlindo23636263">
-        <i class="bi-twitter contact-me-icons"></i>
+        <i className="bi-twitter contact-me-icons"></i>
       </a>
       <a style={styles.linkStyle} href="mailto:perensen@gmail.com">
-        <i class="bi-envelope-at contact-me-icons"></i>
+        <i className="bi-envelope-at contact-me-icons"></i>
       </a>
     </footer>
   );

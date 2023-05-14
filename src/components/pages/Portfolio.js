@@ -2,23 +2,34 @@ import React from "react";
 
 const styles = {
   linkStyle: {
-    margin: "0 10px",
+    padding: "0 20px 0px 0",
+    display: "inline-flex",
+    justifyContent: "space-between",
     textDecoration: "none",
-    background: "white",
   },
-  cardBodyStyle: {
-    backGroundColor: "white",
+  containerStyle: {
+    padding: "20px",
+    background: "#222831",
+    opacity: "0.9",
+    color: "white",
+    borderRadius: "10px ",
+    paddingBottom: "50px",
   },
   cardHeaderStyle: {
     padding: "10px",
+    color: "#222831",
+  },
+
+  cardBodyStyle: {
+    color: "#222831",
   },
 };
 
 export default function Portfolio() {
   return (
-    <div>
+    <div style={styles.containerStyle}>
       <h4>Portfolio</h4>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {/* cards */}
         <article className="col">
           <div className="card h-100">
@@ -31,12 +42,12 @@ export default function Portfolio() {
             >
               <img
                 src="./assets/img/project-nexus-homepage.jpeg"
-                className="card-img-top"
+                className="img-thumbnail"
                 alt="Dark Building with Coming Soon phrase"
               />
             </a>
             <div className="card-body">
-              <p className="card-text">
+              <p className="card-text" style={styles.cardBodyStyle}>
                 We're dedicated to bringing you the latest news and information
                 on a wide range of topics, from entertainment and sports to
                 technology and science.
@@ -68,12 +79,12 @@ export default function Portfolio() {
             <a href="https://freewill201.github.io/Space-Repo/">
               <img
                 src="./assets/img/space-repo-image.jpg"
-                className="card-img-top"
+                className="img-thumbnail"
                 alt="Website with space news"
               />
             </a>
             <div style={styles.cardStyle} className="card-body">
-              <p className="card-text">
+              <p className="card-text" style={styles.cardBodyStyle}>
                 Astro News, your one-stop source for all things space!
               </p>
             </div>
@@ -103,12 +114,12 @@ export default function Portfolio() {
             <a href="https://jate-text-editor-application.herokuapp.com/">
               <img
                 src="./assets/img/text-editor.jpg"
-                className="card-img-top"
+                className="img-thumbnail"
                 alt="Screen capture of Portfolio website"
               />
             </a>
             <div className="card-body">
-              <p className="card-text">
+              <p className="card-text" style={styles.cardBodyStyle}>
                 A simple PWA (Progessive Web Application) Application
               </p>
             </div>
@@ -139,12 +150,12 @@ export default function Portfolio() {
             <a href="https://arlindo2017.github.io/climate-cove/">
               <img
                 src="./assets/img/climate-cove.jpg"
-                className="card-img-top"
+                className="img-thumbnail"
                 alt="Screen capture of Portfolio website"
               />
             </a>
             <div className="card-body">
-              <p className="card-text">
+              <p className="card-text" style={styles.cardBodyStyle}>
                 In this weather dashboard application you can see the current
                 weather along with the forecast for the next 5 days for a
                 specific US city. After searching for a specific city, that city
@@ -178,12 +189,12 @@ export default function Portfolio() {
             <a href="https://arlindo2017.github.io/code-quiz/">
               <img
                 src="./assets/img/javascript-quiz.jpg"
-                className="card-img-top"
+                className="img-thumbnail"
                 alt="Screen capture of Portfolio website"
               />
             </a>
             <div className="card-body">
-              <p className="card-text">
+              <p className="card-text" style={styles.cardBodyStyle}>
                 In this quiz, you will be asked 10 random beginner javascript
                 questions to test your knowledge. Game starts with 100 seconds
                 on the clock (10 seconds per question) if you answered them
@@ -219,12 +230,12 @@ export default function Portfolio() {
             <a href="https://galaxy-geek.herokuapp.com/">
               <img
                 src="./assets/img/galaxy-geek-fullpage-cover.jpg"
-                className="card-img-top"
+                className="img-thumbnail"
                 alt="Screen capture of Portfolio website"
               />
             </a>
             <div className="card-body">
-              <p className="card-text">
+              <p className="card-text" style={styles.cardBodyStyle}>
                 We cover a wide range of Samsung Galaxy phones, from the latest
                 models to the older ones, so you can find the information you
                 need to make an informed decision about your next purchase. Our
