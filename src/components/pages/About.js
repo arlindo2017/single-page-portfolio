@@ -20,6 +20,7 @@ export default function About() {
           src="./assets/img/profile.jpg"
           alt="My Profile"
         />
+        <hr />
         <p>
           As a beginner web developer, I am excited to begin my journey in the
           development field where I hope to apply some of my previous experience

@@ -2,15 +2,15 @@ import React from "react";
 
 const styles = {
   navbarStyle: {
-    fontWeight: "bold",
-    marginBottom: "10px",
+    // fontWeight: "bold",
+    marginBottom: "5px",
     background: "#222831",
     opacity: "0.9",
     borderRadius: "0 0 5px 5px",
-    paddingBottom: "10px",
+    paddingBottom: "5px",
   },
   linkStyle: {
-    padding: "0px 20px 0 0",
+    padding: "0px 10px 0 0",
     marginLeft: "20px",
     color: "white",
   },
@@ -20,7 +20,7 @@ function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav
       style={styles.navbarStyle}
-      className="navbar navbar-expand-lg navbar-light"
+      className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm "
     >
       <div className="nav-item">
         <a

@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
   headerStyle: {
-    marginTop: "10px",
+    marginTop: "5px",
     borderRadius: "5px 5px 0 0 ",
     color: "white",
     background: "#222831",
@@ -18,7 +18,7 @@ function Header() {
   return (
     <header className=" container">
       <div style={styles.headerStyle}>
-        <h1 style={styles.nameStyle}>Arlindo Pinto</h1>
+        <h2 style={styles.nameStyle}>Arlindo Pinto</h2>
       </div>
     </header>
   );

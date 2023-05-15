@@ -4,7 +4,6 @@ const styles = {
   linkStyle: {
     padding: "0 20px 0px 0",
     display: "inline-flex",
-    justifyContent: "space-between",
     textDecoration: "none",
   },
   containerStyle: {
@@ -12,16 +11,19 @@ const styles = {
     background: "#222831",
     opacity: "0.9",
     color: "white",
-    borderRadius: "10px ",
+    borderRadius: "5px ",
     paddingBottom: "50px",
   },
   cardHeaderStyle: {
     padding: "10px",
     color: "#222831",
   },
-
   cardBodyStyle: {
     color: "#222831",
+  },
+  cardFooterStyle: {
+    display: "flex",
+    justifyContent: "center",
   },
 };
 
@@ -53,7 +55,7 @@ export default function Portfolio() {
                 technology and science.
               </p>
             </div>
-            <div className="card-footer">
+            <div style={styles.cardFooterStyle} className="card-footer">
               <a
                 style={styles.linkStyle}
                 href="https://project-nexus.herokuapp.com/"
@@ -88,7 +90,7 @@ export default function Portfolio() {
                 Astro News, your one-stop source for all things space!
               </p>
             </div>
-            <div className="card-footer">
+            <div style={styles.cardFooterStyle} className="card-footer">
               <a
                 style={styles.linkStyle}
                 href="https://freewill201.github.io/Space-Repo/"
@@ -123,7 +125,7 @@ export default function Portfolio() {
                 A simple PWA (Progessive Web Application) Application
               </p>
             </div>
-            <div className="card-footer">
+            <div style={styles.cardFooterStyle} className="card-footer">
               <a
                 style={styles.linkStyle}
                 href="https://jate-text-editor-application.herokuapp.com/"
@@ -162,7 +164,7 @@ export default function Portfolio() {
                 is added to the search history for future reference.
               </p>
             </div>
-            <div className="card-footer">
+            <div style={styles.cardFooterStyle} className="card-footer">
               <a
                 style={styles.linkStyle}
                 href="https://arlindo2017.github.io/climate-cove/"
@@ -203,7 +205,7 @@ export default function Portfolio() {
                 clock runs out, you loose the game.
               </p>
             </div>
-            <div className="card-footer">
+            <div style={styles.cardFooterStyle} className="card-footer">
               <a
                 style={styles.linkStyle}
                 href="https://arlindo2017.github.io/code-quiz/"
@@ -243,7 +245,7 @@ export default function Portfolio() {
                 performance, battery life, and more.
               </p>
             </div>
-            <div className="card-footer">
+            <div style={styles.cardFooterStyle} className="card-footer">
               <a
                 style={styles.linkStyle}
                 href="https://galaxy-geek.herokuapp.com/"
